@@ -22,24 +22,58 @@ class Game
     when "paper"
       if player2 == "rock"
         return "Player 1 wins!"
+      elsif player2 == "spock"
+        return "Player 1 wins!"
       elsif player2 == "scissors"
-        return "Player 2 wins"
+        return "Player 2 wins!"
+      elsif player2 == "lizard"
+        return "Player 2 wins!"
       else
         return "It's a draw!"
       end
 
     when "scissors"
       if player2 == "paper"
-        return "Player 2 wins!"
-      elsif player2 == "rock"
         return "Player 1 wins!"
+      elsif player2 == "lizard"
+        return "Player 1 wins!"
+      elsif player2 == "rock"
+        return "Player 2 wins!"
+      elsif player2 == "spock"
+        return "Player 2 wins!"
       else
         return "It's a draw!"
       end
 
-    else
-      return "hmm"
-    end
-  end
+    when "lizard"
+      if player2 == "spock"
+        return "Player 1 wins!"
+      elsif player2 == "paper"
+        return "Player 1 wins!"
+      elsif player2 == "rock"
+        return "Player 2 wins!"
+      elsif player2 == "scissors"
+        return " Player 2 wins!"
+      else
+        return "It's a draw!"
+      end
 
-end
+    when "spock"
+      if player2 == "scissors"
+        return "Player 1 wins!"
+      elsif player2 == "rock"
+        return "Player 1 wins!"
+      elsif player2 == "paper"
+        return "Player 2 wins!"
+      elsif player2 =="lizard"
+        return "Player 2 wins!"
+      else
+        return "It's a draw!"
+      end
+
+      else
+        return "hmm"
+      end
+    end
+
+  end

@@ -2,3 +2,7 @@ body {
   background-color: #5f5d63;
   text-align: center;
 }
+
+li {
+  list-style-type: none;
+}
